@@ -1,0 +1,80 @@
+# File Log
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm/
+*.mtj.tmp/
+*.mtj.staging/
+
+# Direktori Runtime
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Cache Library Diagnostik
+lib-cov
+
+# Direktori output coverage
+coverage
+*.lcov
+
+# Cache tool profiling Node.js
+*.profraw
+*.json.gz
+
+# Cache bundler Metro
+.metro-cache/
+
+# Cache bundler Haste
+.haste_cache/
+
+# Cache bundler lainnya
+*.haste
+
+# Direktori dependensi
+node_modules/
+jspm_packages/
+
+# Direktori build Expo
+.expo/
+dist/
+web-build/
+
+# File konfigurasi lokal Expo (jika ada)
+.exprc
+
+# File sistem operasi
+.DS_Store
+Thumbs.db
+
+# File editor/IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# File environment
+.env
+.env.*
+!.env.example
+
+# Build Android
+android/app/build/
+android/.gradle/
+android/build/
+android/app/src/main/assets/app.manifest
+android/app/src/main/assets/index.android.bundle*
+
+# Build iOS
+ios/build/
+ios/Pods/
+*.xcworkspace
+
+# Lain-lain
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
