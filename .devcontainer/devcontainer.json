@@ -1,15 +1,37 @@
+// .devcontainer/devcontainer.json
 {
-  "name": "Node.js & JavaScript",
+  // Nama konfigurasi dev container Anda
+  "name": "Expo Android WebView Project",
+
+  // Gunakan image Node.js LTS sebagai basis
+  // Anda bisa memilih versi spesifik jika diperlukan
   "image": "mcr.microsoft.com/devcontainers/javascript-node:0-lts",
+
+  // Fitur tambahan yang mungkin berguna (opsional)
+  // "features": {},
+
+  // Teruskan port yang digunakan oleh Expo Metro Bundler
   "forwardPorts": [8081],
+
+  // Port lain yang mungkin ingin Anda teruskan (misalnya, jika Anda menjalankan server backend)
+  // "otherPorts": [],
+
+  // Perintah yang dijalankan setelah container dibuat pertama kali
+  // Ini akan menginstal dependensi proyek secara otomatis
   "postCreateCommand": "npm install",
+
+  // Pengaturan spesifik untuk VS Code di dalam container
   "customizations": {
     "vscode": {
+      // Daftar ekstensi VS Code yang direkomendasikan untuk diinstal
       "extensions": [
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
-        "expo.vscode-expo-tools"
+        "dbaeumer.vscode-eslint",     // Integrasi ESLint
+        "esbenp.prettier-vscode",   // Integrasi Prettier
+        "expo.vscode-expo-tools"    // Alat bantu untuk pengembangan Expo
       ]
     }
   }
+
+  // Uncomment baris berikut jika Anda ingin menjalankan sebagai user non-root
+  // "remoteUser": "node"
 }
