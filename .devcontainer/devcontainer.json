@@ -1,0 +1,15 @@
+{
+  "name": "Node.js & JavaScript",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-lts",
+  "forwardPorts": [8081],
+  "postCreateCommand": "npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "expo.vscode-expo-tools"
+      ]
+    }
+  }
+}
