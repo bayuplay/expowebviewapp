@@ -1,0 +1,48 @@
+// package.json
+{
+  "name": "expowebviewapp", // Pastikan ini sesuai dengan nama proyek Anda
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js", // Atau entry point yang sesuai
+  "scripts": {
+    // Skrip yang sudah ada dari 'expo init'
+    // "start": "expo start", // Komentari atau hapus jika mendefinisikan ulang
+    // "android": "expo start --android", // Komentari atau hapus jika mendefinisikan ulang
+    // "ios": "expo start --ios", // Komentari atau hapus jika mendefinisikan ulang
+    // "web": "expo start --web", // Komentari atau hapus jika mendefinisikan ulang
+
+    // --- Tambahan Skrip ---
+    "start": "expo start", // Memulai Metro Bundler
+    "tunnel": "expo start --tunnel", // Memulai Metro Bundler dengan tunneling (untuk Expo Go di jaringan berbeda)
+    "android": "expo run:android", // Menjalankan aplikasi pada development build Android (memerlukan setup tambahan)
+    "ios": "expo run:ios", // Menjalankan aplikasi pada development build iOS (memerlukan setup tambahan & macOS)
+    "web": "expo start --web", // Menjalankan aplikasi di browser web
+    "clear": "expo r -c", // Membersihkan cache Metro Bundler
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx", // Menjalankan ESLint untuk memeriksa kode
+    "format": "prettier --write ." // Menjalankan Prettier untuk memformat kode
+    // --- Akhir Tambahan Skrip ---
+  },
+  "dependencies": {
+    // Dependensi yang sudah ada dari 'expo init'
+    "expo": "~51.0.8", // Ganti dengan versi Expo SDK yang Anda gunakan
+    "expo-status-bar": "~1.12.1",
+    "react": "18.2.0",
+    "react-native": "0.74.1",
+    "react-native-webview": "13.8.6" // Pastikan react-native-webview terinstal jika belum
+    // Tambahkan dependensi lain yang dibutuhkan proyek Anda
+  },
+  "devDependencies": {
+    // Dependensi pengembangan yang sudah ada dari 'expo init'
+    "@babel/core": "^7.20.0",
+
+    // --- Tambahan Dev Dependencies ---
+    "eslint": "^8.57.0", // Versi ESLint (bisa disesuaikan)
+    "eslint-config-expo": "^7.0.0", // Konfigurasi ESLint standar dari Expo
+    "prettier": "^3.2.5", // Versi Prettier (bisa disesuaikan)
+    // Jika Anda menggunakan React Hooks, plugin ini mungkin sudah termasuk dalam eslint-config-expo
+    // "eslint-plugin-react": "^7.34.1",
+    // "eslint-plugin-react-hooks": "^4.6.0",
+    // "eslint-plugin-react-native": "^4.1.0" // Jika diperlukan secara eksplisit
+    // --- Akhir Tambahan Dev Dependencies ---
+  },
+  "private": true
+}
