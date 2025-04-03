@@ -1,0 +1,73 @@
+// app.json
+{
+  "expo": {
+    // Nama aplikasi Anda seperti yang akan muncul di home screen
+    "name": "SimpleWeb Go", // Sesuaikan dengan nama proyek Anda
+    // Slug digunakan dalam URL Expo, biasanya sama dengan nama proyek (lowercase, tanpa spasi)
+    "slug": "expowebviewapp", // Sesuaikan dengan nama proyek Anda
+    // Versi aplikasi Anda
+    "version": "1.0.0",
+    // Orientasi layar default (portrait/landscape)
+    "orientation": "portrait",
+    // Path ke ikon aplikasi Anda (buat file icon.png di root proyek)
+    "icon": "./assets/icon.png", // Pastikan Anda memiliki folder assets dan file icon.png
+    // Skema warna untuk user interface sistem saat aplikasi aktif
+    "userInterfaceStyle": "light",
+    // Konfigurasi layar splash saat aplikasi dimuat
+    "splash": {
+      // Path ke gambar splash screen (buat file splash.png di folder assets)
+      "image": "./assets/splash.png", // Pastikan Anda memiliki file splash.png
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff" // Warna latar belakang splash screen
+    },
+    // Konfigurasi pembaruan Over-The-Air (OTA)
+    "updates": {
+      "fallbackToCacheTimeout": 0 // Atau sesuaikan sesuai kebutuhan
+      // Anda mungkin ingin menambahkan "url" jika menggunakan EAS Update
+      // "url": "https://u.expo.dev/YOUR_PROJECT_ID"
+    },
+    // Pola file aset yang akan dibundel dengan aplikasi Anda
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    // Konfigurasi spesifik untuk platform iOS
+    "ios": {
+      "supportsTablet": true
+      // "bundleIdentifier": "com.yourcompany.yourapp" // Opsional: Ganti dengan bundle ID Anda
+    },
+    // Konfigurasi spesifik untuk platform Android
+    "android": {
+      // Menggunakan ikon adaptif untuk Android (memerlukan ikon foreground & background)
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png", // Pastikan ada file adaptive-icon.png
+        "backgroundColor": "#FFFFFF"
+      }
+      // "package": "com.yourcompany.yourapp" // Opsional: Ganti dengan package name Anda
+    },
+    // Konfigurasi spesifik untuk platform Web
+    "web": {
+      // Path ke favicon untuk web
+      "favicon": "./assets/favicon.png" // Pastikan ada file favicon.png
+    },
+    // --- PENTING: Sesuaikan dengan versi Expo SDK di package.json ---
+    // Jika package.json menggunakan "expo": "~51.0.8", gunakan "51.0.0"
+    "sdkVersion": "51.0.0",
+    // Plugin yang mungkin Anda gunakan (contoh: react-native-webview jika diperlukan konfigurasi tambahan)
+    "plugins": [
+      // Contoh jika Anda perlu konfigurasi plugin tertentu
+      // [
+      //   "expo-build-properties",
+      //   {
+      //     "android": {
+      //       "usesCleartextTraffic": true
+      //     }
+      //   }
+      // ]
+    ]
+    // "extra": { // Tempat untuk menambahkan konstanta kustom
+    //   "eas": {
+    //     "projectId": "YOUR_PROJECT_ID" // Jika menggunakan EAS Build/Update
+    //   }
+    // }
+  }
+}
