@@ -3,21 +3,14 @@
   // Nama konfigurasi dev container Anda
   "name": "Expo Android WebView Project",
 
-  // Gunakan image Node.js LTS sebagai basis
-  // Anda bisa memilih versi spesifik jika diperlukan
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-lts",
-
-  // Fitur tambahan yang mungkin berguna (opsional)
-  // "features": {},
+  // Gunakan image Node.js LTS versi 20 dari Microsoft sebagai basis
+  // Ini adalah image standar yang direkomendasikan untuk dev container Node.js
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20-lts",
 
   // Teruskan port yang digunakan oleh Expo Metro Bundler
   "forwardPorts": [8081],
 
-  // Port lain yang mungkin ingin Anda teruskan (misalnya, jika Anda menjalankan server backend)
-  // "otherPorts": [],
-
   // Perintah yang dijalankan setelah container dibuat pertama kali
-  // Ini akan menginstal dependensi proyek secara otomatis
   "postCreateCommand": "npm install",
 
   // Pengaturan spesifik untuk VS Code di dalam container
